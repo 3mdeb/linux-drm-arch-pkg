@@ -3,8 +3,7 @@
 # Maintainer: Thomas Baechler <thomas@archlinux.org>
 
 pkgbase=linux-drm           # Build stock -ARCH kernel
-#pkgbase=linux-custom       # Build kernel with a different name
-_srcname=linux-drm-tip-drm-tip
+_srcname=linux-drm-tip-4.12rc2
 pkgver=4.12.0rc2
 pkgrel=1
 arch=('x86_64')
@@ -12,7 +11,7 @@ url="https://github.com/"
 license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc' 'libelf')
 options=('!strip')
-source=("https://github.com/3mdeb/linux-drm-tip/archive/drm-tip.tar.gz"
+source=("https://github.com/3mdeb/linux-drm-tip/archive/4.12rc2.zip"
         # the main kernel config files
         'config.x86_64'
         # pacman hook for initramfs regeneration
@@ -20,7 +19,7 @@ source=("https://github.com/3mdeb/linux-drm-tip/archive/drm-tip.tar.gz"
         # standard config files for mkinitcpio ramdisk
         'linux.preset')
 
-sha256sums=('23df0606be8010b8054a20be7662986295eb2bd1cec93bdf36edfc4c417400bd'
+sha256sums=('613aa90412b9aca5c989061ffd7ec3d1b0ccbfac0e6258f296f501c64928a723'
             '2462c19299cc2da8ac8310e80bf01eba67d0cd2fba4f3f7c0654ee5d38adf8fd'
             '834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0'
             'ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65')
